@@ -149,8 +149,8 @@ function digitate_scripts() {
             wp_enqueue_script( 'home-call', get_template_directory_uri() . '/js/home.js', array(), '20170508', true );
         }
         
-        if ( is_page( array('learn', 'resolve', 'predict') ) ) {
-            wp_enqueue_script( 'product-child', get_template_directory_uri() . '/js/product-feature-min.js', array(), '20170508', true );
+        if ( is_page( array('learn', 'resolve', 'prevent') ) ) {
+            wp_enqueue_script( 'product-child', get_template_directory_uri() . '/js/product-feature.js', array(), '20170508', true );
         }
         
         if ( is_page( 'events' ) ) {

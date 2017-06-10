@@ -29,8 +29,11 @@ jQuery(document).ready(function($) {
 					'margin-top': '0',
 					'padding-bottom': '0'
 					});
+				$('.feature-nav').css({
+					'top': '50px'
+				});
 			} else {
-				$('.home-button, .site-header-menu, .headbrand').removeAttr('style');
+				$('.home-button, .site-header-menu, .headbrand, .feature-nav').removeAttr('style');
 			}
 		});
 	}

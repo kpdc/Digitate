@@ -16,16 +16,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-                    <?php if(is_page( array('learn', 'resolve', 'predict') )) { ?>
-                        <div class="feature-nav">
-                                <nav class="wrap">
-                                        <?php wp_nav_menu(array(
-                                            'theme_location' => 'productfeanav',
-                                            'container' => '',
-                                        ))?>
-                                </nav>
-                        </div>
-                    <?php } ?>
 
                     <?php
                     while ( have_posts() ) : the_post();

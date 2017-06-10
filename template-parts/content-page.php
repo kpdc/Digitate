@@ -40,27 +40,25 @@
             </div>
         <?php endif; ?>
     </section>
-<?php } elseif(is_page( array('learn', 'resolve', 'predict') )) { ?>
-    <div class="slide">
-            <div class="wrap">
-                    <?php the_post_thumbnail(); ?>
-                    <div class="intro-main-text">
-                            <h3 class="page-title"><?php the_title(); ?></h3>
-                            <?php the_content(); ?>
-                    </div>
-            </div>
-    </div>
-    <div class="product-intro">
-            <div class="intro-sub wrap">
-                    <?php the_field('introduction_contents'); ?>
-            </div>
-    </div>
 <?php } else { ?>
     
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <?php if(is_page( array('learn', 'resolve', 'predict') )) { ?>
+            <div class="feature-nav">
+                    <nav class="wrap">
+                            <?php wp_nav_menu(array(
+                                'theme_location' => 'productfeanav',
+                                'container' => '',
+                            ))?>
+                    </nav>
+            </div>
+        <?php } ?>
+        
+        <?php if(!is_page( array('learn', 'resolve', 'prevent', 'banking-financial-services', 'consumer-goods', 'insurance', 'power-and-energy', 'retail', 'telecom', 'ignio-for-it-operations', 'ignio-for-batch', 'ignio-for-sap') )) { ?>
             <header class="entry-header">
                     <?php the_title( '<h2 class="page-title">', '</h2>' ); ?>
             </header><!-- .entry-header -->
+        <?php } ?>
 
             <div class="entry-content">
                     <?php

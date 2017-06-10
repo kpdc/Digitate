@@ -56,7 +56,7 @@
 	</header><!-- #masthead -->
 
 	<div class="container">
-            <?php if(is_front_page() || is_page( array('product', 'learn', 'resolve', 'prevent') )) : ?>
+            <?php if(is_front_page() || is_page( array('product', 'learn', 'resolve', 'prevent', 'banking-financial-services', 'consumer-goods', 'insurance', 'power-and-energy', 'retail', 'telecom', 'ignio-for-it-operations', 'ignio-for-batch', 'ignio-for-sap') )) : ?>
                 <div id="content" class="site-content">
             <?php else : ?>
                 <div id="content" class="site-content wrap">

@@ -1,14 +1,4 @@
 <article>
-        <div class="category">
-                <?php
-                    /* translators: used between list items, there is a space after the comma */
-                    $category_list = get_the_category_list( __( ', ', 'digitate' ) );
-
-                    if ( digitate_categorized_blog() ) {
-                        echo '<div class="category-list">' . $category_list . '</div>';
-                    }
-                ?>
-        </div>
         <div class="title">
                 <h1><?php the_title(); ?></h1>
         </div>

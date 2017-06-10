@@ -14,7 +14,7 @@
 
                     <?php
                     $slide = new WP_Query(array(
-                        'post_type' => 'post',
+                        'post_type' => 'any',
                         'cat' => 8,
                         'posts_per_page' =>2,
                     ));
@@ -75,9 +75,9 @@
 
             <section class="home-post">
                 <?php $blog_post = new WP_Query( array(
-                    'post_type' => 'post',
+                    'post_type' => 'any',
                     'posts_per_page' => 1,
-                    'cat' => -9,
+                    'cat' => 1,
                 ) ); ?>
                 <div class="content-wrapper">
                     <div class="wrap">
@@ -92,7 +92,7 @@
                 </div>
             </section> <!-- .home-post -->
             <?php $announcement_post = new WP_Query( array(
-                'post_type' => 'post',
+                'post_type' => 'any',
                 'posts_per_page' => 2,
                 'cat' => 9,
             ) ); 
