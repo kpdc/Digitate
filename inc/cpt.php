@@ -27,7 +27,7 @@
                 'show_in_menu' => true,
                 'menu_position' => 5,
                 'menu_icon' => 'dashicons-calendar-alt',
-            	'taxonomies' => array( 'category' ),
+                'taxonomies' => array( 'category' ),
                 'query_var' => true,
                 'capability_type' => 'post',
                 'has_archive' => true,
@@ -62,7 +62,7 @@
                 'show_in_menu' => true,
                 'menu_position' => 5,
                 'menu_icon' => 'dashicons-category',
-            	'taxonomies' => array( 'category' ),
+                'taxonomies' => array( 'category' ),
                 'query_var' => true,
                 'capability_type' => 'post',
                 'has_archive' => true,
@@ -97,12 +97,12 @@
                 'show_in_menu' => true,
                 'menu_position' => 5,
                 'menu_icon' => 'dashicons-layout',
-            	'taxonomies' => array( 'category' ),
+                'taxonomies' => array( 'category' ),
                 'query_var' => true,
                 'capability_type' => 'post',
                 'has_archive' => true,
                 'hierarchical' => false,
-                'supports' => array( 'title', 'editor', 'thumbnail' )
+                'supports' => array( 'title', 'editor', 'thumbnail', 'author' )
         );
         register_post_type( 'newsrooms', $args );
     }

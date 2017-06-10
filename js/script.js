@@ -58,6 +58,21 @@ jQuery(document).ready(function($) {
 		$('.toggle').click(function() {
 			$('.home-button, .sub-headbrand').fadeToggle(1200);
 		});
+
+		$('.has-child').click(function() {
+			if( $('.has-child > ul').hasClass('active') ) {
+				$('.has-child > ul').removeClass('active');
+			} else {
+				$(this).find('ul').first().addClass('active');
+			}
+		});
+
+		$('.has-child ul').append('<li class="close"><span></span></li>')
+
+		$('.close').click(function() {
+			$(this).parent.find('ul').removeClass('active');
+		});
+
 		$(document).scroll(function() {
 			var toggle_shadow = $(this).scrollTop();
 			if(toggle_shadow > 100) {
@@ -93,4 +108,33 @@ jQuery(document).ready(function($) {
 
 	// remove p tag that wrap the img
 	$('p > img').unwrap();
+
+	// Show Demo button after scrolled
+	$(document).scroll(function() {
+		var demo = $(this).scrollTop();
+		if(demo > 300) {
+			$('.demo-button').addClass('show');
+		} else {
+			$('.demo-button').removeClass('show');
+		}
+	});
+	
+	// Reset from after submited
+	$(window).on('unload', function() {
+		$('.wpcf7-form').reset();
+	});
+	
+	// Smooth ScrollTo
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+			return false;
+			}
+		}
+	});
 });

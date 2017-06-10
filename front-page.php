@@ -15,7 +15,7 @@
                     <?php
                     $slide = new WP_Query(array(
                         'post_type' => 'any',
-                        'cat' => 8,
+                        'cat' => 7,
                         'posts_per_page' =>2,
                     ));
 
@@ -85,7 +85,7 @@
                         <div class="home-post-container">
                             <h2 class="home-post-title"><?php the_title() ?></h2>
                             <?php the_excerpt() ?>
-                            <p><a href="<?php the_permalink(); ?>">Find out More</a></p>
+                            <p><a href="<?php the_permalink(); ?>">Read more</a></p>
                         </div>
                         <?php endwhile; wp_reset_postdata() ?>
                     </div>
@@ -94,7 +94,7 @@
             <?php $announcement_post = new WP_Query( array(
                 'post_type' => 'any',
                 'posts_per_page' => 2,
-                'cat' => 9,
+                'cat' => 5,
             ) ); 
      
             if(have_posts()) : 
@@ -107,7 +107,7 @@
                             <div class="announcement-info">
                                 <h2 class="announcement-title"><?php the_title() ?></h2>
                                 <?php the_excerpt() ?>
-                                <p><a href="<?php the_permalink() ?>">Find out More <span></span></a></p>
+                                <p><a href="<?php the_permalink() ?>">Learn more <span></span></a></p>
                             </div>
                             <?php endwhile; ?>
                         </div>
