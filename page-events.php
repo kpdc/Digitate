@@ -26,7 +26,7 @@
                         $date = new DateTime($date);
                         ?>
                         <span class="month"><?php echo $date->format('M'); ?></span>
-                        <span class="date"><?php echo $date->format('m'); ?></span>
+                        <span class="date"><?php echo $date->format('j'); ?></span>
                         <span class="day"><?php echo $date->format('D'); ?></span>
                     </div>
                     <div class="event-info">
@@ -72,7 +72,7 @@
                                 $date = new DateTime($date);
                                 ?>
                                 <span class="month"><?php echo $date->format('M'); ?></span>
-                                <span class="date"><?php echo $date->format('m'); ?></span>
+                                <span class="date"><?php echo $date->format('j'); ?></span>
                                 <span class="day"><?php echo $date->format('D'); ?></span>
                             </div>
                             <div class="event-info">
@@ -120,7 +120,7 @@
                         $date = new DateTime($date);
                         ?>
                         <span class="month"><?php echo $date->format('M'); ?></span>
-                        <span class="date"><?php echo $date->format('m'); ?></span>
+                        <span class="date"><?php echo $date->format('j'); ?></span>
                         <span class="day"><?php echo $date->format('D'); ?></span>
                     </div>
                     <div class="event-info">
@@ -166,7 +166,7 @@
                                 $date = new DateTime($date);
                                 ?>
                                 <span class="month"><?php echo $date->format('M'); ?></span>
-                                <span class="date"><?php echo $date->format('m'); ?></span>
+                                <span class="date"><?php echo $date->format('j'); ?></span>
                                 <span class="day"><?php echo $date->format('D'); ?></span>
                             </div>
                             <div class="event-info">
