@@ -18,7 +18,8 @@ get_header(); ?>
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'digitate' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
-			<div class="blogpost">
+                        
+                        <div class="blogpost">
 
 			<?php
 			/* Start the Loop */
@@ -33,17 +34,18 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			digitate_paging_nav();
 
 		else :
 
-			get_template_part( 'template-parts/content', 'none' ); ?>
-			</div>
+			get_template_part( 'template-parts/content', 'none' );
 
-		<?php endif; ?>
+		endif; ?>
+                        </div>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
 <?php
+get_sidebar();
 get_footer();

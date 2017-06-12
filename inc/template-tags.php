@@ -301,7 +301,13 @@ function digitate_custom_menu_item_classes($classes = array(), $menu_item = fals
             // $classes = array();
     // }
     //use this format for adding highlighting
-    if((is_singular('resources') || is_post_type_archive('resources')) && $menu_item->ID == 163) {
+    if((is_singular('resources') || is_post_type_archive('resources') || is_tax('resource-tag')) && $menu_item->ID == 163) {
+            $classes[] = 'current-menu-item';
+    }
+    if((is_tax('newsroom-tag')) && $menu_item->ID == 161) {
+            $classes[] = 'current-menu-item';
+    }
+    if((is_tax('newsroom-tag')) && $menu_item->ID == 158) {
             $classes[] = 'current-menu-item';
     }
 
