@@ -37,13 +37,17 @@
                     <div class="event-info">
                         <div class="info-details">
                             <h3>
-                                <?php the_title(); ?>
+                                <?php if(get_field( 'media_link' )) : ?>
+                                <a href="<?php the_field('media_link'); ?>">
+                                    <?php the_title(); ?>
+                                </a>
+                                <?php endif; ?>
                                <cite><?php the_field('date_of_media_publish'); ?></cite>
                             </h3>
                             <?php the_content();
                             if(get_field( 'media_link' )) : ?>
                             <div class="external-link">
-                                <a href="<?php the_field('media_link'); ?>" target="_blank">Read more</a>
+                                <a href="<?php the_field('media_link'); ?>">Read more</a>
                             </div>
                             <?php endif; ?>
                             
