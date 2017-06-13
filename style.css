@@ -3855,7 +3855,8 @@ nav ul {
   }
 @media (min-width: 768px) {
   #events .page-title {
-    float: left; }
+    /*float: left;*/ 
+  }
   #events .event-filter {
     float: right;
     margin: 55px 0 30px; 
