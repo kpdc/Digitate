@@ -4391,12 +4391,27 @@ nav ul {
     color: #FFF;
 }
 
+.page #masthead-textbox a {
+    color: #FFF;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.page #masthead-textbox i {
+    margin-left: 5px;
+}
+
 .page #masthead-textbox .wpb_wrapper {
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
     max-width: 680px;
+}
+
+.page .anchor {
+    height: 0;
+    margin: 0;
 }
 /*--------------------------------------------------------------
 ## Solutions
