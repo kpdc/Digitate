@@ -12,13 +12,6 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-            <header class="single-header">
-                <?php if(is_singular('post')) : ?>
-                <h2 class="page-title"><img src="<?php bloginfo('template_directory') ?>/images/digitate.png">blog</h2>
-                <?php get_search_form(); ?>
-                <?php endif; ?>
-            </header>
-
             <?php
             while ( have_posts() ) : the_post();
 

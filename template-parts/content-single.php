@@ -1,9 +1,20 @@
-<article>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="title">
-        <h1 class="page-title"><?php the_title(); ?></h1>
+        <h1 class="post-title"><?php the_title(); ?></h1>
     </div>
+    <?php if( has_tag() ) { ?>
+    <div class="meta">
+        <div class="tags">
+            <?php
+                echo get_the_tag_list( '<i class="fa fa-tag"></i> ', ' <i class="fa fa-tag"></i> ', '' );
+            ?>
+        </div>
+    </div>
+    <?php } ?>
     <div class="post">
-        <?php the_post_thumbnail(); ?>
+        <?php if(is_singular('post')) :
+            the_post_thumbnail();
+        endif; ?>
         <div class="txt">
                 <?php the_content(); ?>
             <?php
@@ -26,4 +37,3 @@
         </div>
     </div>
 </article>
-
