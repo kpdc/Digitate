@@ -505,8 +505,6 @@ input[type="submit"] {
 	border-radius: 3px;
 	background: #e6e6e6;
 	color: rgba(0, 0, 0, .8);
-	font-size: 12px;
-	font-size: 0.75rem;
 	line-height: 1;
 	padding: .6em 1em .4em;
 }
@@ -3519,6 +3517,30 @@ nav ul {
   } 
 }
 
+.single-resources article {
+  max-width: 320px;
+  width: 100%; 
+}
+.single-resources label, .single-resources input, .single-resources textarea {
+  display: block;
+  width: 100%; 
+}
+.single-resources input, .single-resources textarea, .single-resources select {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0;
+  color: #333;
+  padding: 5px;
+  width: 100%; 
+}
+.single-resources input[type="submit"] {
+  background-color: #256191;
+  font-family: 'Titillium Sb';
+  color: #FFF; 
+}
+
 #videos .play {
   position: absolute;
   bottom: 5px;
@@ -4060,24 +4082,19 @@ nav ul {
 }
 
 #contact-us .contact-detail {
-  *zoom: 1; 
-}
+  *zoom: 1; }
   #contact-us .contact-detail:after {
     content: "";
     display: table;
-    clear: both; 
-  }
+    clear: both; }
   #contact-us .contact-detail .page-title {
-    margin-bottom: 20px; 
-  }
+    margin-bottom: 20px; }
   #contact-us .contact-detail .cForm a {
     color: #256191;
-    font-family: 'Titillium Sb'; 
-  }
+    font-family: 'Titillium Sb'; }
   #contact-us .contact-detail .cForm label, #contact-us .contact-detail .cForm input, #contact-us .contact-detail .cForm textarea {
     display: block;
-    width: 100%; 
-  }
+    width: 100%; }
   #contact-us .contact-detail .cForm input, #contact-us .contact-detail .cForm textarea, #contact-us .contact-detail .cForm select {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -4086,40 +4103,31 @@ nav ul {
     border: 0;
     color: #333;
     padding: 5px;
-    width: 100%; 
-  }
+    width: 100%; }
   #contact-us .contact-detail .cForm input[type="submit"] {
     background-color: #256191;
     font-family: 'Titillium Sb';
-    font-size: 18px;
-    color: #FFF; 
-  }
+    color: #FFF;
+    margin-top: 20px;
+    padding: 5px 15px;
+    width: 100%; }
   #contact-us .contact-detail .location {
-    margin-bottom: 30px; 
-  }
-    #contact-us .contact-detail .location .address {
-      /*margin-bottom: 40px;*/ 
-    }
+    margin-bottom: 30px; }
     #contact-us .contact-detail .location #usmap, #contact-us .contact-detail .location #inmap {
       width: 90%;
-      height: 200px; 
-    }
+      height: 200px; }
   #contact-us .contact-detail .social {
     float: left;
     margin-top: 40px;
-    overflow: hidden; 
-  }
+    overflow: hidden; }
     #contact-us .contact-detail .social .page-title {
-      margin-top: 0; 
-    }
+      margin-top: 0; }
     #contact-us .contact-detail .social ul {
-      *zoom: 1; 
-    }
+      *zoom: 1; }
       #contact-us .contact-detail .social ul:after {
         content: "";
         display: table;
-        clear: both; 
-      }
+        clear: both; }
     #contact-us .contact-detail .social li {
       -moz-transition: all 0.35s ease-in-out;
       -o-transition: all 0.35s ease-in-out;
@@ -4134,14 +4142,11 @@ nav ul {
       margin-right: 10px;
       padding: 5px;
       width: 35px;
-      height: 35px; 
-    }
+      height: 35px; }
       #contact-us .contact-detail .social li:hover {
-        background-color: #256191; 
-      }
+        background-color: #256191; }
         #contact-us .contact-detail .social li:hover a {
-          color: #FFF; 
-        }
+          color: #FFF; }
     #contact-us .contact-detail .social a {
       -moz-transition: all 0.35s ease-in-out;
       -o-transition: all 0.35s ease-in-out;
@@ -4150,68 +4155,63 @@ nav ul {
       color: #256191;
       display: block;
       line-height: 25px;
-      text-align: center; 
-    }
-    #contact-us .wpcf7-response-output {
-      clear: both;
-    }
+      text-align: center; }
   @media (min-width: 680px) {
     #contact-us .contact-detail .cForm {
-      *zoom: 1; 
-    }
+      *zoom: 1; }
       #contact-us .contact-detail .cForm:after {
         content: "";
         display: table;
-        clear: both; 
-      }
+        clear: both; }
       #contact-us .contact-detail .cForm input[type="submit"] {
         float: right;
         margin-right: 0;
-        width: 30%; 
-      } 
-  }
+        clear: both; }
+      #contact-us .contact-detail .cForm .recaptcha-wrap {
+        float: right; } }
   @media (min-width: 850px) {
     #contact-us .contact-detail .cForm {
       width: 65.51724%;
       float: right;
-      margin-right: 0; 
-    }
-    #contact-us .contact-detail .cForm form p {
+      margin-right: 0; }
+      #contact-us .contact-detail .cForm form p {
         width: 48.27586%;
-        float: left; 
-        }
+        float: left; }
         #contact-us .contact-detail .cForm form p:nth-child(2n + 1) {
           margin-left: 0;
           margin-right: -100%;
           clear: both;
-          margin-left: 0; 
-          }
+          margin-left: 0; }
         #contact-us .contact-detail .cForm form p:nth-child(2n + 2) {
           margin-left: 51.72414%;
           margin-right: -100%;
-          clear: none; 
-          }
-        #contact-us .contact-detail .cForm form p:nth-child(7), #contact-us .contact-detail .cForm form p:last-child {
+          clear: none; }
+        #contact-us .contact-detail .cForm form p:nth-child(7) {
           clear: both;
           width: 100%;
           float: left;
           margin-left: 0;
-          margin-right: 0;
-          margin-bottom: 20px;
-          }
+          margin-right: 0; }
+        #contact-us .contact-detail .cForm form p:last-child {
+          clear: none;
+          float: right;
+          margin: 0;
+          width: auto; }
       #contact-us .contact-detail .cForm input[type="submit"] {
         float: right;
         margin-right: 0;
-        width: 30%; 
-      }
+        clear: none; }
+      #contact-us .contact-detail .cForm .recaptcha-wrap {
+        float: left; }
     #contact-us .contact-detail .location {
       width: 31.03448%;
       float: left;
-      margin-right: 3.44828%; 
-    }
+      margin-right: 3.44828%; }
     #contact-us .contact-detail .social {
       clear: none;
-      margin-top: 50px; 
+      margin-top: 50px; }
+    #contact-us .contact-detail .wpcf7-response-output {
+      clear: both; 
     } 
   }
 

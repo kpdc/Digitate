@@ -12,28 +12,24 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
+            <header class="single-header">
+                <?php if(is_singular('post')) : ?>
+                <h2 class="page-title"><img src="<?php bloginfo('template_directory') ?>/images/digitate.png">blog</h2>
+                <?php get_search_form(); ?>
+                <?php endif; ?>
+            </header>
+
             <?php
-            while ( have_posts() ) : the_post(); ?>
-            
-                <div class="resource-post">
+            while ( have_posts() ) : the_post();
 
-                    <article>
-                        <div class="post">
-                            <?php the_post_thumbnail(); ?>
-                            <div class="txt">
-                                <?php the_content(); ?>
-                            <?php
-                                wp_link_pages( array(
-                                        'before' => '<div class="page-links">' . __( 'Pages:', 'digitate' ),
-                                        'after'  => '</div>',
-                                ) );
-                            ?>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                get_template_part( 'template-parts/content', 'single' );
 
-            <?php endwhile; // End of the loop.
+                // If comments are open or we have at least one comment, load up the comment template.
+                if ( comments_open() || get_comments_number() ) :
+                        comments_template();
+                endif;
+
+            endwhile; // End of the loop.
             ?>
 
         </main><!-- #main -->
