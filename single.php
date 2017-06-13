@@ -14,7 +14,7 @@ get_header(); ?>
 
             <header class="single-header">
                 <?php if(is_singular('post')) : ?>
-                <h2 class="page-title"><img src="<?php bloginfo('template_directory') ?>/images/digitate.png">Blog</h2>
+                <h2 class="page-title"><img src="<?php bloginfo('template_directory') ?>/images/digitate.png">Blogs</h2>
                 <?php get_search_form(); ?>
                 <?php endif; ?>
             </header>
