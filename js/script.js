@@ -59,19 +59,19 @@ jQuery(document).ready(function($) {
 			$('.home-button, .sub-headbrand').fadeToggle(1200);
 		});
 
-		$('.has-child').click(function() {
-			if( $('.has-child > ul').hasClass('active') ) {
-				$('.has-child > ul').removeClass('active');
+		$('.has-child').append('<span></span>');
+
+		$('.has-child span').click(function() {
+			if( $('.has-child ul').hasClass('active') ) {
+				$('.has-child ul').removeClass('active');
 			} else {
-				$(this).find('ul').first().addClass('active');
+				$(this).parent().find('ul').addClass('active');
 			}
 		});
 
-		$('.has-child ul').append('<li class="close"><span></span></li>')
-
-		$('.close').click(function() {
-			$(this).parent.find('ul').removeClass('active');
-		});
+		// $('.close').click(function() {
+		// 	$(this).parent.find('ul').removeClass('active');
+		// });
 
 		$(document).scroll(function() {
 			var toggle_shadow = $(this).scrollTop();
@@ -86,11 +86,17 @@ jQuery(document).ready(function($) {
 	} else {
 		if($(window).width() > 855) {
 			$('.home-button').removeAttr('style');
-			$(window).resize(function() {
-				$('.site-header-menu, .toggle').removeClass('active');
-			});
+			$('.has-child').find("span").remove();
 		}
 	}
+
+	$(window).resize(function() {
+		$('.site-header-menu, .toggle').removeClass('active');
+
+		if($(this).width() > 855) {
+			$('.has-child').find("span").remove();
+		}
+	});
 
 	$('.demo-button, .demo-query-button').click(function() {
 		var popup = $('.demo-button, .eform');
@@ -101,40 +107,11 @@ jQuery(document).ready(function($) {
 			popup.addClass('active');
 		}
 
-		$('.close').click(function() {
-			popup.removeClass('active');
-		});
+		// $('.close').click(function() {
+		// 	popup.removeClass('active');
+		// });
 	});
 
 	// remove p tag that wrap the img
 	$('p > img').unwrap();
-
-	// Show Demo button after scrolled
-	$(document).scroll(function() {
-		var demo = $(this).scrollTop();
-		if(demo > 300) {
-			$('.demo-button').addClass('show');
-		} else {
-			$('.demo-button').removeClass('show');
-		}
-	});
-	
-	// Reset from after submited
-	$(window).on('unload', function() {
-		$('.wpcf7-form').reset();
-	});
-	
-	// Smooth ScrollTo
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-					scrollTop: target.offset().top - 100
-				}, 1000);
-			return false;
-			}
-		}
-	});
 });
