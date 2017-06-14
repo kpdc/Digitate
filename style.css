@@ -3579,7 +3579,56 @@ nav ul {
     color: rgba(255, 255, 255, 0.85); 
   }
 
-#faq article ol {
+#faq .entry-header {
+  *zoom: 1; 
+}
+  #faq .entry-header:after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+#faq .resource-nav {
+  *zoom: 1;
+  margin-bottom: 30px; 
+}
+  #faq .resource-nav:after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+  #faq .resource-nav li {
+    display: inline;
+    float: left; 
+  }
+    #faq .resource-nav li a {
+      -moz-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out;
+      -webkit-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      color: rgba(0, 0, 0, 0.45);
+      font-family: 'Titillium Sb'; 
+    }
+    #faq .resource-nav li:after {
+      content: '|';
+      display: inline-block;
+      padding: 0 10px; 
+    }
+    #faq .resource-nav li:last-child:after {
+      display: none; 
+    }
+    #faq .resource-nav li:hover a, #faq .resource-nav li.current-menu-item a {
+      color: #256191; 
+    }
+@media (min-width: 855px) {
+  #faq .page-title {
+    float: left; 
+  }
+  #faq .resource-nav {
+    float: right;
+    margin: 55px 0 30px; 
+  } 
+}
+  #faq article ol {
   margin-left: 20px; 
 }
 #faq article li {
