@@ -2114,6 +2114,9 @@ nav ul {
       margin-bottom: 5px;
       width: 128px; 
     }
+    .home .home-slide .home-slide-container .home-slide-content h2 {
+      font-size: 2em; 
+    }
     .home .home-slide .home-slide-container .home-slide-content p {
       text-shadow: 0 0 5px black;
       font-size: 1.5em;
@@ -2192,6 +2195,9 @@ nav ul {
       .home .home-slide .home-slide-container .home-slide-content .ignioBrand {
         float: left;
         margin-right: 30px; 
+      }
+      .home .home-slide .home-slide-container .home-slide-content h2 {
+        font-size: 2.827em; 
       }
     .home .home-slide .home-slide-container.post-slide-container .home-slide-content {
       -moz-transform: none;
@@ -3880,7 +3886,7 @@ nav ul {
   }
 @media (min-width: 768px) {
   #events .page-title {
-    /*float: left;*/ 
+    float: left; 
   }
   #events .event-filter {
     float: right;
