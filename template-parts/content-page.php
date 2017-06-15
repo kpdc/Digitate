@@ -56,19 +56,7 @@
         
         <?php if(!is_page( array('learn', 'resolve', 'prevent', 'banking-financial-services', 'consumer-goods', 'insurance', 'power-and-energy', 'retail', 'telecom', 'ignio-for-it-operations', 'ignio-for-batch', 'ignio-for-sap','partner') )) { ?>
             <header class="entry-header">
-                    <?php the_title( '<h2 class="page-title">', '</h2>' );
-        
-                    if( is_page('faq') ) { ?>
-                            <nav class="resource-nav">
-                                <?php
-                                    wp_nav_menu(array(
-                                        'theme_location' => 'resourcenav',
-                                        'container' => '',
-                                    ));
-                                ?>
-                            </nav>
-                        <?php }
-                    ?>
+                <?php the_title( '<h2 class="page-title">', '</h2>' ); ?>
             </header><!-- .entry-header -->
         <?php } ?>
 
