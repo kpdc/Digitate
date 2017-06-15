@@ -80,13 +80,17 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.demo-button, .demo-query-button').click(function() {
-		var popup = $('.demo-button, .eform');
+		var popup = $('.demo-button, .eform, .container');
 
 		if(popup.hasClass('active')) {
 			popup.removeClass('active');
 		} else {
 			popup.addClass('active');
 		}
+
+		$('.close').click(function() {
+			popup.removeClass('active');
+		});
 	});
 
 	// remove p tag that wrap the img

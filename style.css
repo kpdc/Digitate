@@ -1310,6 +1310,16 @@ object {
     display: table;
     clear: both; 
   }
+  .container.active:before {
+    background-color: rgba(0, 0, 0, 0.85);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10; 
+  }
   @media (min-width: 855px) {
     .container {
       padding-top: 80px; 
@@ -2052,41 +2062,17 @@ nav ul {
       -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
       background-color: rgba(255, 255, 255, 0.95);
-      position: absolute;
+      position: fixed;
       top: 50%;
       left: 50%;
       width: 500px; 
     }
       .demo .eform.active {
-        -moz-transform: translate(-50%, -150%);
-        -ms-transform: translate(-50%, -150%);
-        -webkit-transform: translate(-50%, -150%);
-        transform: translate(-50%, -150%); 
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); 
       } 
-  }
-  @media (min-width: 900px) {
-    .demo .eform.active {
-      -moz-transform: translate(-50%, -200%);
-      -ms-transform: translate(-50%, -200%);
-      -webkit-transform: translate(-50%, -200%);
-      transform: translate(-50%, -200%); 
-    } 
-  }
-  @media (min-width: 1240px) {
-    .demo .eform.active {
-      -moz-transform: translate(-50%, -100%);
-      -ms-transform: translate(-50%, -100%);
-      -webkit-transform: translate(-50%, -100%);
-      transform: translate(-50%, -100%); 
-    } 
-  }
-  @media (min-width: 1500px) {
-    .demo .eform.active {
-      -moz-transform: translate(-50%, -140%);
-      -ms-transform: translate(-50%, -140%);
-      -webkit-transform: translate(-50%, -140%);
-      transform: translate(-50%, -140%); 
-    } 
   }
   
 .home .slide {
