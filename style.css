@@ -2766,17 +2766,6 @@ nav ul {
   } 
 }
 
-.demo-button {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  visibility: hidden; 
-}
-  .demo-button.show {
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-    visibility: visible; 
-  }
-
 .owl-theme .owl-controls {
   position: absolute;
   bottom: 0;
