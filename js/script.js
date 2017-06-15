@@ -1,19 +1,4 @@
 jQuery(document).ready(function($) {
-	// Modernizr
-	function is_touch_device() {
-		return !!('ontouchstart' in window);
-	}
-
-	if(is_touch_device()) {
-		$('.site-header-menu ul li > a').click(function(event) {
-			$('.site-header-menu ul li > a').not(this).removeClass('clicked');
-			$(this).toggleClass('clicked');
-			if($(this).hasClass('clicked')) {
-				event.preventDefault();
-			}
-		});
-	}
-
 	// To Narrow down header menu
 	if($(window).width() > 855) {
 		$(document).scroll(function() {
@@ -69,10 +54,6 @@ jQuery(document).ready(function($) {
 			}
 		});
 
-		// $('.close').click(function() {
-		// 	$(this).parent.find('ul').removeClass('active');
-		// });
-
 		$(document).scroll(function() {
 			var toggle_shadow = $(this).scrollTop();
 			if(toggle_shadow > 100) {
@@ -106,10 +87,6 @@ jQuery(document).ready(function($) {
 		} else {
 			popup.addClass('active');
 		}
-
-		// $('.close').click(function() {
-		// 	popup.removeClass('active');
-		// });
 	});
 
 	// remove p tag that wrap the img
