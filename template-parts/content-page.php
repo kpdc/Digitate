@@ -9,15 +9,15 @@
 
 ?>
 
-<?php if(is_page( array('product', 'about', 'partner') )) { ?>
+<?php if(is_page( array('product') )) { ?>
     <div class="slide">
             <div class="intro">
-                    <div class="intro-container">
-                            <?php the_post_thumbnail(); ?>
-                            <div class="intro-text wrap">
-                                    <?php the_content(); ?>
-                            </div>
+                <div class="intro-container">
+                    <?php the_post_thumbnail(); ?>
+                    <div class="intro-text wrap">
+                        <?php the_content(); ?>
                     </div>
+                </div>
             </div>
     </div><!-- slide -->
     <section class="quick-link">
@@ -54,7 +54,7 @@
             </div>
         <?php } ?>
         
-        <?php if(!is_page( array('learn', 'resolve', 'prevent', 'banking-financial-services', 'consumer-goods', 'insurance', 'power-and-energy', 'retail', 'telecom', 'ignio-for-it-operations', 'ignio-for-batch', 'ignio-for-sap', 'about','partner') )) { ?>
+        <?php if(!is_page( array('learn', 'resolve', 'prevent', 'banking-financial-services', 'consumer-goods', 'insurance', 'power-and-energy', 'retail', 'telecom', 'ignio-for-it-operations', 'ignio-for-batch', 'ignio-for-sap','partner') )) { ?>
             <header class="entry-header">
                     <?php the_title( '<h2 class="page-title">', '</h2>' );
         
