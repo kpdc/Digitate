@@ -21,33 +21,37 @@ get_header(); ?>
                 ?>
                 
                 <?php
-                    if( is_tax('resource-tag') ) { ?>
-                        <nav class="resource-nav">
-                            <?php
-                                wp_nav_menu(array(
-                                    'theme_location' => 'resourcenav',
-                                    'container' => '',
-                                ));
-                            ?>
-                        </nav>
-                    <?php }
-                ?>
-                
-                <?php
-                    if( is_tax('newsroom-tag') ) { ?>
-                        <nav class="news-filter">
-                            <?php
-                                wp_nav_menu(array(
-                                    'theme_location' => 'newsfilter',
-                                    'container' => '',
-                                ));
-                            ?>
-                        </nav>
-                    <?php }
-                ?>
+                if( is_tax('resource-tag') ) { ?>
+                    <nav class="resource-nav">
+                        <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'resourcenav',
+                                'container' => '',
+                            ));
+                        ?>
+                    </nav>
+                <?php } elseif( is_tax('newsroom-tag') ) { ?>
+                    <nav class="news-filter">
+                        <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'newsfilter',
+                                'container' => '',
+                            ));
+                        ?>
+                    </nav>
+                <?php } elseif( is_tax('event-group') ) { ?>
+                    <nav class="event-filter">
+                        <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'eventfilter',
+                                'container' => '',
+                            ));
+                        ?>
+                    </nav>
+                <?php } ?>
             </header><!-- .page-header -->
             
-            <?php if(is_home() || is_tax('resource-tag')) { ?>
+            <?php if(is_home() || is_tax('resource-tag') || is_tag()) { ?>
                 <div class="blogpost">
             <?php } else { ?>
                 <section class="event">
@@ -66,7 +70,7 @@ get_header(); ?>
 
             endwhile; ?>
                 
-            <?php if(is_home() || is_tax('resource-tag')) { ?>
+            <?php if(is_home() || is_tax('resource-tag') || is_tag()) { ?>
                 </div>
             <?php } else { ?>
                 </section>

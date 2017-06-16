@@ -3696,33 +3696,32 @@ nav ul {
   } 
 }
 
-#events .event-filter {
+#events .page-header, .tax-event-group .page-header {
   *zoom: 1; 
 }
-  #events .event-filter:after {
+  #events .page-header:after, .tax-event-group .page-header:after {
     content: "";
     display: table;
     clear: both; 
   }
-  #events .event-filter li {
+  #events .page-header li, .tax-event-group .page-header li {
     display: inline;
     float: left; 
   }
-    #events .event-filter li:after {
+    #events .page-header li:after, .tax-event-group .page-header li:after {
       content: '|';
       display: inline-block; 
     }
-    #events .event-filter li:first-child a {
-      padding-left: 0; 
-    }
-    #events .event-filter li:last-child:after {
+    #events .page-header li:first-child a, .tax-event-group .page-header li:first-child a {
+      padding-left: 0; }
+    #events .page-header li:last-child:after, .tax-event-group .page-header li:last-child:after {
       content: '';
       display: none; 
     }
-    #events .event-filter li:last-child a {
+    #events .page-header li:last-child a, .tax-event-group .page-header li:last-child a {
       padding-right: 0; 
     }
-    #events .event-filter li a {
+    #events .page-header li a, .tax-event-group .page-header li a {
       -moz-transition: all 0.35s ease-in-out;
       -o-transition: all 0.35s ease-in-out;
       -webkit-transition: all 0.35s ease-in-out;
@@ -3731,22 +3730,22 @@ nav ul {
       font-family: 'Titillium Sb';
       padding: 0 10px; 
     }
-    #events .event-filter li:hover a {
+    #events .page-header li:hover a, .tax-event-group .page-header li:hover a, #events .page-header li.current-menu-item a, .tax-event-group .page-header li.current-menu-item a {
       color: #256191; 
     }
-#events section, #newsroom section, .tax-newsroom-tag section {
+#events section, #newsroom section, .tax-newsroom-tag section, .tax-event-group section {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   padding: 40px 0; 
 }
-  #events section:before, #newsroom section:before, .tax-newsroom-tag section:before {
+  #events section:before, #newsroom section:before, .tax-newsroom-tag section:before, .tax-event-group section:before {
     display: none; 
   }
-#events .page-title .title-button, #newsroom .page-title .title-button, .tax-newsroom-tag .page-title .title-button {
+#events .page-title .title-button, #newsroom .page-title .title-button, .tax-newsroom-tag .page-title .title-button, .tax-event-group .page-title .title-button {
   cursor: pointer; 
 }
-  #events .page-title .title-button em, #newsroom .page-title .title-button em, .tax-newsroom-tag .page-title .title-button em {
+  #events .page-title .title-button em, #newsroom .page-title .title-button em, .tax-newsroom-tag .page-title .title-button em, .tax-event-group .page-title .title-button em {
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -3761,7 +3760,7 @@ nav ul {
     position: relative;
     margin-left: 3px; 
   }
-    #events .page-title .title-button em:before, #newsroom .page-title .title-button em:before, .tax-newsroom-tag .page-title .title-button em:before, #events .page-title .title-button em:after, #newsroom .page-title .title-button em:after, .tax-newsroom-tag .page-title .title-button em:after {
+    #events .page-title .title-button em:before, #newsroom .page-title .title-button em:before, .tax-newsroom-tag .page-title .title-button em:before, .tax-event-group .page-title .title-button em:before, #events .page-title .title-button em:after, #newsroom .page-title .title-button em:after, .tax-newsroom-tag .page-title .title-button em:after, .tax-event-group .page-title .title-button em:after {
       -moz-transition: all 0.35s ease-in-out;
       -o-transition: all 0.35s ease-in-out;
       -webkit-transition: all 0.35s ease-in-out;
@@ -3774,7 +3773,7 @@ nav ul {
       position: absolute;
       top: 6px; 
     }
-    #events .page-title .title-button em:before, #newsroom .page-title .title-button em:before, .tax-newsroom-tag .page-title .title-button em:before {
+    #events .page-title .title-button em:before, #newsroom .page-title .title-button em:before, .tax-newsroom-tag .page-title .title-button em:before, .tax-event-group .page-title .title-button em:before {
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
@@ -3782,7 +3781,7 @@ nav ul {
       top: 4px;
       left: 5px; 
     }
-    #events .page-title .title-button em:after, #newsroom .page-title .title-button em:after, .tax-newsroom-tag .page-title .title-button em:after {
+    #events .page-title .title-button em:after, #newsroom .page-title .title-button em:after, .tax-newsroom-tag .page-title .title-button em:after, .tax-event-group .page-title .title-button em:after {
       -moz-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
@@ -3790,26 +3789,26 @@ nav ul {
       top: 7px;
       left: 5px; 
     }
-  #events .page-title .title-button:hover > em, #newsroom .page-title .title-button:hover > em, .tax-newsroom-tag .page-title .title-button:hover > em {
+  #events .page-title .title-button:hover > em, #newsroom .page-title .title-button:hover > em, .tax-newsroom-tag .page-title .title-button:hover > em, .tax-event-group .page-title .title-button:hover > em {
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg); 
   }
-  #events .page-title .title-button.active, #newsroom .page-title .title-button.active, .tax-newsroom-tag .page-title .title-button.active {
+  #events .page-title .title-button.active, #newsroom .page-title .title-button.active, .tax-newsroom-tag .page-title .title-button.active, .tax-event-group .page-title .title-button.active {
     color: #1b4668; 
   }
-    #events .page-title .title-button.active em, #newsroom .page-title .title-button.active em, .tax-newsroom-tag .page-title .title-button.active em {
+    #events .page-title .title-button.active em, #newsroom .page-title .title-button.active em, .tax-newsroom-tag .page-title .title-button.active em, .tax-event-group .page-title .title-button.active em {
       -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
       border: 2px solid #1b4668; 
     }
-      #events .page-title .title-button.active em:before, #newsroom .page-title .title-button.active em:before, .tax-newsroom-tag .page-title .title-button.active em:before, #events .page-title .title-button.active em:after, #newsroom .page-title .title-button.active em:after, .tax-newsroom-tag .page-title .title-button.active em:after {
+      #events .page-title .title-button.active em:before, #newsroom .page-title .title-button.active em:before, .tax-newsroom-tag .page-title .title-button.active em:before, .tax-event-group .page-title .title-button.active em:before, #events .page-title .title-button.active em:after, #newsroom .page-title .title-button.active em:after, .tax-newsroom-tag .page-title .title-button.active em:after, .tax-event-group .page-title .title-button.active em:after {
         background-color: #1b4668; 
       }
-#events article, #newsroom article, .tax-newsroom-tag article {
+#events article, #newsroom article, .tax-newsroom-tag article, .tax-event-group article {
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -3819,19 +3818,23 @@ nav ul {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
   *zoom: 1;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.45);
-  padding: 30px 10px; 
+  padding: 30px 10px;
+  margin: 0; 
 }
-  #events article:after, #newsroom article:after, .tax-newsroom-tag article:after {
+  #events article:after, #newsroom article:after, .tax-newsroom-tag article:after, .tax-event-group article:after {
     content: "";
     display: table;
     clear: both; 
   }
-  #events article:hover, #newsroom article:hover, .tax-newsroom-tag article:hover {
+  #events article:hover, #newsroom article:hover, .tax-newsroom-tag article:hover, .tax-event-group article:hover {
     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25); }
+  #events article.event-group-webinars-archive, #newsroom article.event-group-webinars-archive, .tax-newsroom-tag article.event-group-webinars-archive, .tax-event-group article.event-group-webinars-archive {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; 
   }
-#events .event-date, #newsroom .event-date, .tax-newsroom-tag .event-date {
+#events .event-date, #newsroom .event-date, .tax-newsroom-tag .event-date, .tax-event-group .event-date {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -3840,23 +3843,26 @@ nav ul {
   margin-right: 20px;
   padding: 10px; 
 }
-  #events .event-date .month, #newsroom .event-date .month, .tax-newsroom-tag .event-date .month, #events .event-date .date, #newsroom .event-date .date, .tax-newsroom-tag .event-date .date, #events .event-date .day, #newsroom .event-date .day, .tax-newsroom-tag .event-date .day {
+  #events .event-date .month, #newsroom .event-date .month, .tax-newsroom-tag .event-date .month, .tax-event-group .event-date .month, #events .event-date .date, #newsroom .event-date .date, .tax-newsroom-tag .event-date .date, .tax-event-group .event-date .date, #events .event-date .day, #newsroom .event-date .day, .tax-newsroom-tag .event-date .day, .tax-event-group .event-date .day {
     display: block;
     text-align: center;
     text-transform: uppercase; 
   }
-  #events .event-date .date, #newsroom .event-date .date, .tax-newsroom-tag .event-date .date {
+  #events .event-date .date, #newsroom .event-date .date, .tax-newsroom-tag .event-date .date, .tax-event-group .event-date .date {
     font-size: 1.25em;
     line-height: 1.0875em;
     font-family: "Titillium Bd"; 
   }
-#events .event-info .info-details h3, #newsroom .event-info .info-details h3, .tax-newsroom-tag .event-info .info-details h3 {
+#events .event-info .info-details h3, #newsroom .event-info .info-details h3, .tax-newsroom-tag .event-info .info-details h3, .tax-event-group .event-info .info-details h3 {
   font-size: 1.35em;
   line-height: 1.07407em;
   color: #256191;
   margin-top: 0; 
 }
-#events .event-info .info-details cite, #newsroom .event-info .info-details cite, .tax-newsroom-tag .event-info .info-details cite {
+#events .event-info .info-details h3 a, #newsroom .event-info .info-details h3 a, .tax-newsroom-tag .event-info .info-details h3 a, .tax-event-group .event-info .info-details h3 a {
+    color: #256191; 
+}
+#events .event-info .info-details cite, #newsroom .event-info .info-details cite, .tax-newsroom-tag .event-info .info-details cite, .tax-event-group .event-info .info-details cite {
   font-size: 0.75em;
   line-height: 1.20833em;
   color: rgba(0, 0, 0, 0.5);
@@ -3865,10 +3871,10 @@ nav ul {
   font-style: normal;
   margin-top: 10px; 
 }
-#events .event-info .external-link, #newsroom .event-info .external-link, .tax-newsroom-tag .event-info .external-link {
+#events .event-info .external-link, #newsroom .event-info .external-link, .tax-newsroom-tag .event-info .external-link, .tax-event-group .event-info .external-link {
   margin-top: 10px; 
 }
-  #events .event-info .external-link a, #newsroom .event-info .external-link a, .tax-newsroom-tag .event-info .external-link a {
+  #events .event-info .external-link a, #newsroom .event-info .external-link a, .tax-newsroom-tag .event-info .external-link a, .tax-event-group .event-info .external-link a {
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -3882,109 +3888,40 @@ nav ul {
     float: left;
     padding: 10px; 
   }
-    #events .event-info .external-link a:hover, #newsroom .event-info .external-link a:hover, .tax-newsroom-tag .event-info .external-link a:hover {
+    #events .event-info .external-link a:hover, #newsroom .event-info .external-link a:hover, .tax-newsroom-tag .event-info .external-link a:hover, .tax-event-group .event-info .external-link a:hover {
       -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
       -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
       background-color: #1b4668; 
     }
-#events .past-event-container, #newsroom .past-event-container, .tax-newsroom-tag .past-event-container {
-  padding-top: 15px;
-  padding-bottom: 15px; 
-}
-  #events .past-event-container article, #newsroom .past-event-container article, .tax-newsroom-tag .past-event-container article {
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px; 
-  }
-  #events .past-event-container h3, #newsroom .past-event-container h3, .tax-newsroom-tag .past-event-container h3 {
-    margin-top: 0;
-    margin-left: 15px; 
-  }
-  #events .past-event-container .event-date, #newsroom .past-event-container .event-date, .tax-newsroom-tag .past-event-container .event-date {
-    background-color: rgba(40, 80, 100, 0.85);
-    color: #FFF; 
-  }
 @media (min-width: 768px) {
-  #events .page-title {
-    /*float: left;*/
+  #events .page-title, #newsroom .page-title, .tax-newsroom-tag .page-title, .tax-event-group .page-title {
+    float: left; 
   }
-  #events .event-filter {
+  #events .event-filter, #newsroom .news-filter, .tax-newsroom-tag .news-filter, .tax-event-group .event-filter {
     float: right;
     margin: 55px 0 30px; 
   }
-  #events .event {
+  #events .event, #newsroom .event, .tax-newsroom-tag .event, .tax-event-group .event {
     clear: both; 
   }
-  #events .event-date, #newsroom .event-date, .tax-newsroom-tag .event-date {
+  #events .event-date, #newsroom .event-date, .tax-newsroom-tag .event-date, .tax-event-group .event-date {
     margin: 15px 0 0 20px; 
   }
-  #events .event-info, #newsroom .event-info, .tax-newsroom-tag .event-info {
+  #events .event-info, #newsroom .event-info, .tax-newsroom-tag .event-info, .tax-event-group .event-info {
     width: 82.75862%;
     float: right;
     margin-right: 0; 
   }
-  #events .info-details, #newsroom .info-details, .tax-newsroom-tag .info-details {
+  #events .info-details, #newsroom .info-details, .tax-newsroom-tag .info-details, .tax-event-group .info-details {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0; 
-  }
-  #events .past-event-container, #newsroom .past-event-container, .tax-newsroom-tag .past-event-container {
-    *zoom: 1; 
-  }
-    #events .past-event-container:after, #newsroom .past-event-container:after, .tax-newsroom-tag .past-event-container:after {
-      content: "";
-      display: table;
-      clear: both; 
-    }
-    #events .past-event-container article, #newsroom .past-event-container article, .tax-newsroom-tag .past-event-container article {
-      width: 31.03448%;
-      float: left;
-      border-bottom: 0;
-      padding: 15px; 
-    }
-      #events .past-event-container article:nth-child(3n + 1), #newsroom .past-event-container article:nth-child(3n + 1), .tax-newsroom-tag .past-event-container article:nth-child(3n + 1) {
-        margin-left: 0;
-        margin-right: -100%;
-        clear: both;
-        margin-left: 0; 
-      }
-      #events .past-event-container article:nth-child(3n + 2), #newsroom .past-event-container article:nth-child(3n + 2), .tax-newsroom-tag .past-event-container article:nth-child(3n + 2) {
-        margin-left: 34.48276%;
-        margin-right: -100%;
-        clear: none; 
-      }
-      #events .past-event-container article:nth-child(3n + 3), #newsroom .past-event-container article:nth-child(3n + 3), .tax-newsroom-tag .past-event-container article:nth-child(3n + 3) {
-        margin-left: 68.96552%;
-        margin-right: -100%;
-        clear: none; 
-      }
-      #events .past-event-container article:last-child, #newsroom .past-event-container article:last-child, .tax-newsroom-tag .past-event-container article:last-child {
-        border: 0; 
-      }
-    #events .past-event-container .event-date, #newsroom .past-event-container .event-date, .tax-newsroom-tag .past-event-container .event-date {
-      margin: 0; 
-    }
-    #events .past-event-container .event-info, #newsroom .past-event-container .event-info, .tax-newsroom-tag .past-event-container .event-info {
-      clear: both;
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 15px; 
-    }
-      #events .past-event-container .event-info .external-link, #newsroom .past-event-container .event-info .external-link, .tax-newsroom-tag .past-event-container .event-info .external-link {
-        float: left; 
-      }
-    #events .past-event-container .info-details, #newsroom .past-event-container .info-details, .tax-newsroom-tag .past-event-container .info-details {
-      margin-bottom: 15px; 
-    }
-      #events .past-event-container .info-details h3, #newsroom .past-event-container .info-details h3, .tax-newsroom-tag .past-event-container .info-details h3 {
-        margin-left: 0; 
-      } 
+  } 
 }
 @media (min-width: 990px) {
-  #events .event-info, #newsroom .event-info, .tax-newsroom-tag .event-info {
+  #events .event-info, #newsroom .event-info, .tax-newsroom-tag .event-info, .tax-event-group .event-info {
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%;
@@ -3993,33 +3930,33 @@ nav ul {
   } 
 }
 
-#newsroom .news-filter, .tax-newsroom-tag .news-filter {
+#newsroom .news-filter, .tax-newsroom-tag .news-filter, .tax-event-group .news-filter {
   *zoom: 1; 
 }
-  #newsroom .news-filter:after, .tax-newsroom-tag .news-filter:after {
+  #newsroom .news-filter:after, .tax-newsroom-tag .news-filter:after, .tax-event-group .news-filter:after {
     content: "";
     display: table;
     clear: both; 
   }
-  #newsroom .news-filter li, .tax-newsroom-tag .news-filter li {
+  #newsroom .news-filter li, .tax-newsroom-tag .news-filter li, .tax-event-group .news-filter li {
     display: inline;
     float: left; 
   }
-    #newsroom .news-filter li:after, .tax-newsroom-tag .news-filter li:after {
+    #newsroom .news-filter li:after, .tax-newsroom-tag .news-filter li:after, .tax-event-group .news-filter li:after {
       content: '|';
       display: inline-block; 
     }
-    #newsroom .news-filter li:first-child a, .tax-newsroom-tag .news-filter li:first-child a {
+    #newsroom .news-filter li:first-child a, .tax-newsroom-tag .news-filter li:first-child a, .tax-event-group .news-filter li:first-child a {
       padding-left: 0; 
     }
-    #newsroom .news-filter li:last-child:after, .tax-newsroom-tag .news-filter li:last-child:after {
+    #newsroom .news-filter li:last-child:after, .tax-newsroom-tag .news-filter li:last-child:after, .tax-event-group .news-filter li:last-child:after {
       content: '';
       display: none; 
     }
-    #newsroom .news-filter li:last-child a, .tax-newsroom-tag .news-filter li:last-child a {
+    #newsroom .news-filter li:last-child a, .tax-newsroom-tag .news-filter li:last-child a, .tax-event-group .news-filter li:last-child a {
       padding-right: 0; 
     }
-    #newsroom .news-filter li a, .tax-newsroom-tag .news-filter li a {
+    #newsroom .news-filter li a, .tax-newsroom-tag .news-filter li a, .tax-event-group .news-filter li a {
       -moz-transition: all 0.35s ease-in-out;
       -o-transition: all 0.35s ease-in-out;
       -webkit-transition: all 0.35s ease-in-out;
@@ -4028,78 +3965,78 @@ nav ul {
       font-family: 'Titillium Sb';
       padding: 0 10px; 
     }
-    #newsroom .news-filter li:hover a, .tax-newsroom-tag .news-filter li:hover a, #newsroom .news-filter li.current-menu-item a, .tax-newsroom-tag .news-filter li.current-menu-item a {
+    #newsroom .news-filter li:hover a, .tax-newsroom-tag .news-filter li:hover a, .tax-event-group .news-filter li:hover a, #newsroom .news-filter li.current-menu-item a, .tax-newsroom-tag .news-filter li.current-menu-item a, .tax-event-group .news-filter li.current-menu-item a {
       color: #256191; 
     }
-#newsroom article:hover, .tax-newsroom-tag article:hover {
+#newsroom article:hover, .tax-newsroom-tag article:hover, .tax-event-group article:hover {
   background-color: transparent; 
 }
-  #newsroom article:hover img, .tax-newsroom-tag article:hover img {
+  #newsroom article:hover img, .tax-newsroom-tag article:hover img, .tax-event-group article:hover img {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none; 
   }
-#newsroom .newsImg, .tax-newsroom-tag .newsImg {
+#newsroom .newsImg, .tax-newsroom-tag .newsImg, .tax-event-group .newsImg {
   background-color: transparent; 
 }
-  #newsroom .newsImg img, .tax-newsroom-tag .newsImg img {
+  #newsroom .newsImg img, .tax-newsroom-tag .newsImg img, .tax-event-group .newsImg img {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
     width: 80px;
-    margin-bottom: 15px;  
+    margin-bottom: 15px; 
   }
-#newsroom .event-info, .tax-newsroom-tag .event-info {
+#newsroom .event-info, .tax-newsroom-tag .event-info, .tax-event-group .event-info {
   float: left;
   margin-top: 20px; 
 }
-  #newsroom .event-info a, .tax-newsroom-tag .event-info a {
+  #newsroom .event-info a, .tax-newsroom-tag .event-info a, .tax-event-group .event-info a {
     color: #256191;
     font-family: 'Titillium Sb'; 
   }
-#newsroom .media, .tax-newsroom-tag .media {
+#newsroom .media, .tax-newsroom-tag .media, .tax-event-group .media {
   font-size: 0.875em;
   line-height: 1.13929em;
   margin-bottom: 0;
   font-family: 'Titillium Sb';
   text-transform: uppercase; 
 }
-  #newsroom .media span, .tax-newsroom-tag .media span {
+  #newsroom .media span, .tax-newsroom-tag .media span, .tax-event-group .media span {
     border-top: 1px solid #4d4d4d;
     display: block;
     padding-bottom: 10px;
     width: 30px; 
   }
-#newsroom .media-author, .tax-newsroom-tag .media-author {
+#newsroom .media-author, .tax-newsroom-tag .media-author, .tax-event-group .media-author {
   font-size: 0.8125em;
   line-height: 1.11538em;
   font-style: normal;
   display: block; 
 }
-#newsroom .sharedaddy, .tax-newsroom-tag .sharedaddy, #newsroom .yarpp-related, .tax-newsroom-tag .yarpp-related {
+#newsroom .sharedaddy, .tax-newsroom-tag .sharedaddy, .tax-event-group .sharedaddy, #newsroom .yarpp-related, .tax-newsroom-tag .yarpp-related, .tax-event-group .yarpp-related {
   display: none; 
 }
 @media (min-width: 768px) {
-  #newsroom .page-title, .tax-newsroom-tag .page-title {
+  #newsroom .page-title, .tax-newsroom-tag .page-title, .tax-event-group .page-title {
     float: left; 
   }
-  #newsroom .news-filter, .tax-newsroom-tag .news-filter {
+  #newsroom .news-filter, .tax-newsroom-tag .news-filter, .tax-event-group .news-filter {
     float: right;
     margin: 55px 0 30px; 
   }
-  #newsroom .event, .tax-newsroom-tag .event {
+  #newsroom .event, .tax-newsroom-tag .event, .tax-event-group .event {
     clear: both; 
   }
-  #newsroom .newsImg, .tax-newsroom-tag .newsImg {
+  #newsroom .newsImg, .tax-newsroom-tag .newsImg, .tax-event-group .newsImg {
     width: 31.03448%;
     float: left;
     margin-right: 3.44828%; 
   }
-  #newsroom .event-info, .tax-newsroom-tag .event-info {
+  #newsroom .event-info, .tax-newsroom-tag .event-info, .tax-event-group .event-info {
     width: 65.51724%;
     float: right;
     margin-right: 0; 
   }
-  #newsroom .info-details, .tax-newsroom-tag .info-details {
+  #newsroom .info-details, .tax-newsroom-tag .info-details, .tax-event-group .info-details {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -4107,12 +4044,12 @@ nav ul {
   } 
 }
 @media (min-width: 990px) {
-  #newsroom .newsImg, .tax-newsroom-tag .newsImg {
+  #newsroom .newsImg, .tax-newsroom-tag .newsImg, .tax-event-group .newsImg {
     width: 16.94915%;
     float: left;
     margin-right: 1.66667%; 
   }
-  #newsroom .event-info, .tax-newsroom-tag .event-info {
+  #newsroom .event-info, .tax-newsroom-tag .event-info, .tax-event-group .event-info {
     width: 74.57627%;
     float: right;
     margin-right: 0;
@@ -4120,15 +4057,15 @@ nav ul {
   } 
 }
 
-.tax-newsroom-tag article {
+.tax-newsroom-tag article, .tax-event-group article {
   background-color: transparent;
-  width: 100%;
+  width: 100%; 
 }
-.tax-newsroom-tag .page-title {
+.tax-newsroom-tag .page-title, .tax-event-group .page-title {
   float: none; 
 }
 @media (min-width: 768px) {
-  .tax-newsroom-tag .page-title {
+  .tax-newsroom-tag .page-title, .tax-event-group .page-title {
     float: left; 
   } 
 }

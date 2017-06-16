@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     
-    <?php if(is_home() || is_tax('resource-tag')) { ?>
+    <?php if(is_home() || is_tax('resource-tag') || is_tag()) { ?>
     <a href="<?php the_permalink(); ?>">
         <?php if( has_post_thumbnail() ) {
             the_post_thumbnail( 'blog-post-thumbnail' );
@@ -53,6 +53,50 @@
                 <?php endif; ?>
             </div>
         </div>
+    
+    <?php } elseif(is_tax('event-group')) { ?>
+        <div class="event-date">
+            <?php
+            $date = get_field('date', false, false);
+            $date = new DateTime($date);
+            ?>
+            <span class="month"><?php echo $date->format('M'); ?></span>
+            <span class="date"><?php echo $date->format('j'); ?></span>
+            <span class="day"><?php echo $date->format('D'); ?></span>
+        </div>
+        <div class="event-info">
+            <div class="info-details">
+                <h3>
+                    <?php the_title();
+                    if(is_category( 'events' )) {
+                        if(get_field( 'venue' )) : ?>
+                        <cite class="location">
+                            <?php the_field('venue'); ?>
+                        </cite>
+                        <?php endif;
+                    } else {
+                        if(is_category( 'webinars' )) {
+                            if(get_field( 'webinar_time' )) : ?>
+                            <cite class="location">
+                                <?php echo 'Webinar Time: '; the_field('webinar_time'); ?>
+                            </cite>
+                            <?php endif;
+                        } ?>
+                    <?php } ?>
+                </h3>
+                <?php the_content();
+                if(get_field( 'external_link' )) { ?>
+                    <div class="external-link">
+                        <a href="<?php the_field('external_link'); ?>">Learn more</a>
+                    </div>
+                <?php } elseif(get_field( 'webinar_video_link' )) {?>
+                    <div class="external-link">
+                        <a href="<?php the_field('webinar_video_link'); ?>">Watch now</a>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    
     <?php } else { ?>
         
         <header class="entry-header">
