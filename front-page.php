@@ -15,7 +15,7 @@
                     <?php
                     $slide = new WP_Query(array(
                         'post_type' => 'any',
-                        'cat' => 7,
+                        'cat' => 8,
                         'posts_per_page' =>2,
                     ));
 
@@ -77,7 +77,7 @@
                 <?php $blog_post = new WP_Query( array(
                     'post_type' => 'any',
                     'posts_per_page' => 1,
-                    'cat' => 1,
+                    'cat' => 39,
                 ) ); ?>
                 <div class="content-wrapper">
                     <div class="wrap">
@@ -85,7 +85,11 @@
                         <div class="home-post-container">
                             <h2 class="home-post-title"><?php the_title() ?></h2>
                             <?php the_excerpt() ?>
-                            <p><a href="<?php the_permalink(); ?>">Read more</a></p>
+                            <?php if(get_field('link_location')) { ?>
+                                <p><a href="<?php the_field('link_location'); ?>">Find out more</a></p>
+                            <?php } else { ?>
+                                <p><a href="<?php the_permalink(); ?>">Find out more</a></p>
+                            <?php } ?>
                         </div>
                         <?php endwhile; wp_reset_postdata() ?>
                     </div>
@@ -94,7 +98,7 @@
             <?php $announcement_post = new WP_Query( array(
                 'post_type' => 'any',
                 'posts_per_page' => 2,
-                'cat' => 5,
+                'cat' => 9,
             ) ); 
      
             if(have_posts()) : 
@@ -107,7 +111,11 @@
                             <div class="announcement-info">
                                 <h2 class="announcement-title"><?php the_title() ?></h2>
                                 <?php the_excerpt() ?>
-                                <p><a href="<?php the_permalink() ?>">Learn more <span></span></a></p>
+                                <?php if(get_field('link_location')) { ?>
+                                    <p><a href="<?php the_field('link_location'); ?>">Find out more <span></span></a></p>
+                                <?php } else { ?>
+                                    <p><a href="<?php the_permalink() ?>">Find out More <span></span></a></p>
+                                <?php } ?>
                             </div>
                             <?php endwhile; ?>
                         </div>
