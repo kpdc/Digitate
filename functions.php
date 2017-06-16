@@ -69,11 +69,10 @@ function digitate_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'digitate' ),
                 'footnav' => esc_html__( 'Footnav', 'digitate' ),
-                'pro_itOpt' => esc_html__( 'Pro_ITOpt', 'digitate' ),
-                'pro_batch' => esc_html__( 'Pro_Batch', 'digitate' ),
-                'pro_sap' => esc_html__( 'Pro_SAP', 'digitate' ),
+                'productfeanav' => esc_html__( 'Productfeanav', 'digitate' ),
                 'newsfilter' => esc_html__( 'Newsfilter', 'digitate' ),
                 'resourcenav' => esc_html__( 'Resourcenav', 'digitate' ),
+                'eventfilter' => esc_html__( 'Eventfilter', 'digitate' ),
                 'footsitemap' => esc_html__( 'Footsitemap', 'digitate' ),
 	) );
 
@@ -138,8 +137,6 @@ function digitate_scripts() {
         wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '4.5.0', false );
         
 	wp_enqueue_script( 'digitate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	
-	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/Modernizr.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'digitate-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -157,9 +154,9 @@ function digitate_scripts() {
             wp_enqueue_script( 'product-child', get_template_directory_uri() . '/js/product-feature.js', array(), '20170508', true );
         }
         
-        if ( is_page( 'events' ) ) {
-            wp_enqueue_script( 'event-filter', get_template_directory_uri() . '/js/event.js', array(), '20170508', true );
-        }
+//        if ( is_page( 'events' ) ) {
+//            wp_enqueue_script( 'event-filter', get_template_directory_uri() . '/js/event.js', array(), '20170508', true );
+//        }
         
         if ( is_page('contact-us') ) {
             wp_enqueue_script( 'gmap-api', '//maps.googleapis.com/maps/api/js?key=AIzaSyDRX5v6RM-T-afB7QvDOSXEdIzqqZZ9QFY', array(), '20170508', true );
@@ -199,8 +196,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-/**
- * Making Wordpress relative URLs.
- */
-require get_template_directory() . '/inc/relative.php';
