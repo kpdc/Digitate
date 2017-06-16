@@ -42,20 +42,14 @@
                                     <a href="<?php the_field('webinar_video_link'); ?>"><?php the_title(); ?></a>
                                 <?php } ?>
                                 <?php
-                                if(is_category( 'events' )) {
-                                    if(get_field( 'venue' )) : ?>
+                                if(get_field( 'venue' )) { ?>
                                     <cite class="location">
                                         <?php the_field('venue'); ?>
                                     </cite>
-                                    <?php endif;
-                                } else {
-                                    if(is_category( 'webinars' )) {
-                                        if(get_field( 'webinar_time' )) : ?>
-                                        <cite class="location">
-                                            <?php echo 'Webinar Time: '; the_field('webinar_time'); ?>
-                                        </cite>
-                                        <?php endif;
-                                    } ?>
+                                <?php } elseif(get_field( 'webinar_time' )) { ?>
+                                    <cite class="location">
+                                        <?php echo 'Webinar Time: '; the_field('webinar_time'); ?>
+                                    </cite>
                                 <?php } ?>
                             </h3>
                             <?php the_content();

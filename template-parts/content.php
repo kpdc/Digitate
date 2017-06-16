@@ -67,21 +67,11 @@
         <div class="event-info">
             <div class="info-details">
                 <h3>
-                    <?php the_title();
-                    if(is_category( 'events' )) {
-                        if(get_field( 'venue' )) : ?>
-                        <cite class="location">
-                            <?php the_field('venue'); ?>
-                        </cite>
-                        <?php endif;
-                    } else {
-                        if(is_category( 'webinars' )) {
-                            if(get_field( 'webinar_time' )) : ?>
-                            <cite class="location">
-                                <?php echo 'Webinar Time: '; the_field('webinar_time'); ?>
-                            </cite>
-                            <?php endif;
-                        } ?>
+                    <?php
+                    if(get_field( 'external_link' )) { ?>
+                        <a href="<?php the_field('external_link'); ?>"><?php the_title(); ?></a>
+                    <?php } elseif(get_field( 'webinar_video_link' )) { ?>
+                        <a href="<?php the_field('webinar_video_link'); ?>"><?php the_title(); ?></a>
                     <?php } ?>
                 </h3>
                 <?php the_content();

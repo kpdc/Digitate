@@ -3985,7 +3985,7 @@ nav ul {
     width: 80px;
     margin-bottom: 15px; 
   }
-#newsroom .event-info, .tax-newsroom-tag .event-info, .tax-event-group .event-info {
+#newsroom .event-info, .tax-newsroom-tag .event-info {
   float: left;
   margin-top: 20px; 
 }
@@ -4031,7 +4031,7 @@ nav ul {
     float: left;
     margin-right: 3.44828%; 
   }
-  #newsroom .event-info, .tax-newsroom-tag .event-info, .tax-event-group .event-info {
+  #newsroom .event-info, .tax-newsroom-tag .event-info {
     width: 65.51724%;
     float: right;
     margin-right: 0; 
@@ -4049,7 +4049,7 @@ nav ul {
     float: left;
     margin-right: 1.66667%; 
   }
-  #newsroom .event-info, .tax-newsroom-tag .event-info, .tax-event-group .event-info {
+  #newsroom .event-info, .tax-newsroom-tag .event-info {
     width: 74.57627%;
     float: right;
     margin-right: 0;
