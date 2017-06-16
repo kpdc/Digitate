@@ -42,14 +42,16 @@
                                     <a href="<?php the_field('webinar_video_link'); ?>"><?php the_title(); ?></a>
                                 <?php } ?>
                                 <?php
-                                if(get_field( 'venue' )) { ?>
-                                    <cite class="location">
-                                        <?php the_field('venue'); ?>
-                                    </cite>
-                                <?php } elseif(get_field( 'webinar_time' )) { ?>
-                                    <cite class="location">
-                                        <?php echo 'Webinar Time: '; the_field('webinar_time'); ?>
-                                    </cite>
+                                if(has_term( array('events', 'webinars'), 'event-group' )) {
+                                    if(get_field( 'venue' )) { ?>
+                                        <cite class="location">
+                                            <?php the_field('venue'); ?>
+                                        </cite>
+                                    <?php } elseif(get_field( 'webinar_time' )) { ?>
+                                        <cite class="location">
+                                            <?php echo 'Webinar Time: '; the_field('webinar_time'); ?>
+                                        </cite>
+                                    <?php } ?>
                                 <?php } ?>
                             </h3>
                             <?php the_content();
