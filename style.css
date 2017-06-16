@@ -3832,7 +3832,6 @@ nav ul {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25); }
   #events article.event-group-webinars-archive, #events article.event-group-events-archive, #newsroom article.event-group-webinars-archive, .tax-newsroom-tag article.event-group-webinars-archive, .tax-event-group article.event-group-webinars-archive, .tax-event-group article.event-group-events-archive {
     background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px; 
   }
 #events .event-date, #newsroom .event-date, .tax-newsroom-tag .event-date, .tax-event-group .event-date {
   -moz-border-radius: 5px;
