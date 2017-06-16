@@ -3967,7 +3967,7 @@ nav ul {
     #newsroom .news-filter li:hover a, .tax-newsroom-tag .news-filter li:hover a, .tax-event-group .news-filter li:hover a, #newsroom .news-filter li.current-menu-item a, .tax-newsroom-tag .news-filter li.current-menu-item a, .tax-event-group .news-filter li.current-menu-item a {
       color: #256191; 
     }
-#newsroom article:hover, .tax-newsroom-tag article:hover, .tax-event-group article:hover {
+#newsroom article:hover, .tax-newsroom-tag article:hover {
   background-color: transparent; 
 }
   #newsroom article:hover img, .tax-newsroom-tag article:hover img, .tax-event-group article:hover img {

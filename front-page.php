@@ -85,7 +85,7 @@
                         <div class="home-post-container">
                             <h2 class="home-post-title"><?php the_title() ?></h2>
                             <?php the_excerpt() ?>
-                            <?php if(get_field('link_location')) { ?>
+                            <?php if(get_field('link_location')) { /*Dynamic Button*/ ?> 
                                 <p><a href="<?php the_field('link_location'); ?>">Find out more</a></p>
                             <?php } else { ?>
                                 <p><a href="<?php the_permalink(); ?>">Find out more</a></p>
