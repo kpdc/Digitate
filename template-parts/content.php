@@ -72,6 +72,20 @@
                         <a href="<?php the_field('external_link'); ?>"><?php the_title(); ?></a>
                     <?php } elseif(get_field( 'webinar_video_link' )) { ?>
                         <a href="<?php the_field('webinar_video_link'); ?>"><?php the_title(); ?></a>
+                    <?php } else { ?>
+                        <?php the_title(); ?>
+                    <?php } ?>
+                    <?php
+                    if(has_term( array('events', 'webinars'), 'event-group' )) {
+                        if(get_field( 'venue' )) { ?>
+                            <cite class="location">
+                                <?php the_field('venue'); ?>
+                            </cite>
+                        <?php } elseif(get_field( 'webinar_time' )) { ?>
+                            <cite class="location">
+                                <?php echo 'Webinar Time: '; the_field('webinar_time'); ?>
+                            </cite>
+                        <?php } ?>
                     <?php } ?>
                 </h3>
                 <?php the_content();
@@ -79,7 +93,7 @@
                     <div class="external-link">
                         <a href="<?php the_field('external_link'); ?>">Learn more</a>
                     </div>
-                <?php } elseif(get_field( 'webinar_video_link' )) {?>
+                    <?php } elseif(get_field( 'webinar_video_link' )) { ?>
                     <div class="external-link">
                         <a href="<?php the_field('webinar_video_link'); ?>">Watch now</a>
                     </div>

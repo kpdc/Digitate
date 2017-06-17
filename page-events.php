@@ -40,6 +40,8 @@
                                     <a href="<?php the_field('external_link'); ?>"><?php the_title(); ?></a>
                                 <?php } elseif(get_field( 'webinar_video_link' )) { ?>
                                     <a href="<?php the_field('webinar_video_link'); ?>"><?php the_title(); ?></a>
+                                <?php } else { ?>
+                                    <?php the_title(); ?>
                                 <?php } ?>
                                 <?php
                                 if(has_term( array('events', 'webinars'), 'event-group' )) {
