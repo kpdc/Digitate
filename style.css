@@ -316,7 +316,7 @@ h4,
 h5,
 h6 {
 	/*clear: both;*/
-        font-family: "Titillium Sb";
+        font-family: "Titillium Sb", Arial, helvetica, sans-serif;
         font-weight: normal;
         margin: 1.414em 0 0.5em;
         line-height: 1.2em;
@@ -706,7 +706,7 @@ a:active {
 .site-main .paging-navigation,
 .site-main .post-navigation {
         font-size: 16px;
-        font-family: 'Titillium Sb', sans-serif;
+        font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
         color: #000;
         color: hsl(0, 0%, 0%);
 }
@@ -774,7 +774,7 @@ a:hover.page-numbers {
 }
 
 .paging-navigation .current {
-    font-family: 'Titillium Bd';
+    font-family: 'Titillium Bd', Arial, helvetica, sans-serif;
     color: #000;
 }
 
@@ -973,7 +973,7 @@ a:hover.page-numbers {
 }
 .posted-on .author a, .byline a {
     color: #256191;
-    font-family: 'Titillium Sb';
+    font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
 }
 .byline:before {
     content: ' on ';
@@ -1006,12 +1006,12 @@ a:hover.page-numbers {
 
 .comment-form {
     padding-bottom: 4rem;
-    font-family: 'Titillium Sb', sans-serif;
+    font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
     font-size: 16px;
 }
 
 .comment-form textarea {
-    font-family: 'Titillium Rg', serif;
+    font-family: 'Titillium Rg', Arial, helvetica, sans-serif;
     font-size: 18px;
     padding: 10px;
 }
@@ -1023,7 +1023,7 @@ a:hover.page-numbers {
 .comment-awaiting-moderation { /* Green background color to make moderation seem less aggressive */
     padding: .5rem 1rem;
     margin: 1rem 0;
-    font-family: 'Titillium Sb', sans-serif;
+    font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
     font-size: 16px;
     color: #fff;
     color: hsl(0, 0%, 100%);
@@ -1485,7 +1485,7 @@ section {
         font-size: 1.5em;
         line-height: 1.0875em;
         color: #256191;
-        font-family: 'Titillium Bd';
+        font-family: 'Titillium Bd', Arial, helvetica, sans-serif;
         margin-bottom: 20px; 
       }
         .quick-link .quick-link-thumb .quick-link-title a span {
@@ -1588,7 +1588,7 @@ section {
 .site-footer {
   background-color: rgb(255, 255, 255);
   color: #666666;
-  font-family: 'Titillium Sb';
+  font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
   font-size: 11px;
   line-height: 15px;
   padding-top: 40px;
@@ -1602,8 +1602,7 @@ section {
     margin-bottom: 20px; 
   }
     .site-footer .contact-info b, .site-footer .contact-info strong {
-      font-family: 'Titillium Bd'; 
-    }
+      font-family: 'Titillium Bd', Arial, helvetica, sans-serif;
   .site-footer .social {
     *zoom: 1;
     margin-top: 10px;
@@ -1820,7 +1819,7 @@ section {
     transition: color 0.35s ease-in-out;
     color: gray;
     display: block;
-    font-family: 'Titillium Sb';
+    font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
     padding: 10px 30px;
   }
 @media (min-width: 855px) {
@@ -1970,7 +1969,7 @@ nav ul {
     background-color: #285064;
     color: #FFF;
     cursor: pointer;
-    font-family: 'Titillium Bd';
+    font-family: 'Titillium Bd', Arial, helvetica, sans-serif;
     font-size: 20px;
     margin: 0 auto;
     padding: 5px 15px;
@@ -2049,7 +2048,7 @@ nav ul {
       border-radius: 5px;
       background-color: #256191;
       color: #FFF;
-      font-family: 'Titillium Bd'; 
+      font-family: 'Titillium Bd', Arial, helvetica, sans-serif;
       font-size: 18px;
     }
     
@@ -3407,7 +3406,7 @@ nav ul {
       -webkit-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out;
       color: rgba(0, 0, 0, 0.45);
-      font-family: 'Titillium Sb'; 
+      font-family: 'Titillium Sb', Arial, helvetica, sans-serif; 
     }
     #resources .resource-nav li:after, .tax-resource-tag .resource-nav li:after {
       content: '|';
@@ -3539,7 +3538,7 @@ nav ul {
 }
 .single-resources input[type="submit"] {
   background-color: #256191;
-  font-family: 'Titillium Sb';
+  font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
   color: #FFF; 
 }
 
@@ -3581,7 +3580,7 @@ nav ul {
       -webkit-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out;
       color: rgba(0, 0, 0, 0.45);
-      font-family: 'Titillium Sb'; 
+      font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
     }
     #faq .resource-nav li:after {
       content: '|';
@@ -3619,12 +3618,12 @@ nav ul {
   #faq article li h3 {
     font-size: 1.25em;
     line-height: 1.0875em;
-    font-family: 'Titillium Rg';
+    font-family: 'Titillium Rg', Arial, helvetica, sans-serif;
     margin: 0; 
   }
   #faq article li a {
     color: #256191;
-    font-family: 'Titillium Sb'; 
+    font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
   }
     
 #about .slide, #partner .slide {
@@ -3727,7 +3726,7 @@ nav ul {
       -webkit-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out;
       color: rgba(0, 0, 0, 0.45);
-      font-family: 'Titillium Sb';
+      font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
       padding: 0 10px; 
     }
     #events .page-header li:hover a, .tax-event-group .page-header li:hover a, #events .page-header li.current-menu-item a, .tax-event-group .page-header li.current-menu-item a {
@@ -3850,7 +3849,7 @@ nav ul {
   #events .event-date .date, #newsroom .event-date .date, .tax-newsroom-tag .event-date .date, .tax-event-group .event-date .date {
     font-size: 1.25em;
     line-height: 1.0875em;
-    font-family: "Titillium Bd"; 
+    font-family: "Titillium Bd", Arial, helvetica, sans-serif; 
   }
 #events .event-info .info-details h3, #newsroom .event-info .info-details h3, .tax-newsroom-tag .event-info .info-details h3, .tax-event-group .event-info .info-details h3 {
   font-size: 1.35em;
@@ -3866,7 +3865,7 @@ nav ul {
   line-height: 1.20833em;
   color: rgba(0, 0, 0, 0.5);
   display: block;
-  font-family: 'Titillium Rg';
+  font-family: 'Titillium Rg', Arial, helvetica, sans-serif;
   font-style: normal;
   margin-top: 10px; 
 }
@@ -3961,7 +3960,7 @@ nav ul {
       -webkit-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out;
       color: rgba(0, 0, 0, 0.45);
-      font-family: 'Titillium Sb';
+      font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
       padding: 0 10px; 
     }
     #newsroom .news-filter li:hover a, .tax-newsroom-tag .news-filter li:hover a, .tax-event-group .news-filter li:hover a, #newsroom .news-filter li.current-menu-item a, .tax-newsroom-tag .news-filter li.current-menu-item a, .tax-event-group .news-filter li.current-menu-item a {
@@ -3990,13 +3989,13 @@ nav ul {
 }
   #newsroom .event-info a, .tax-newsroom-tag .event-info a, .tax-event-group .event-info a {
     color: #256191;
-    font-family: 'Titillium Sb'; 
+    font-family: 'Titillium Sb', Arial, helvetica, sans-serif; 
   }
 #newsroom .media, .tax-newsroom-tag .media, .tax-event-group .media {
   font-size: 0.875em;
   line-height: 1.13929em;
   margin-bottom: 0;
-  font-family: 'Titillium Sb';
+  font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
   text-transform: uppercase; 
 }
   #newsroom .media span, .tax-newsroom-tag .media span, .tax-event-group .media span {
@@ -4079,7 +4078,7 @@ nav ul {
     margin-bottom: 20px; }
   #contact-us .contact-detail .cForm a {
     color: #256191;
-    font-family: 'Titillium Sb'; }
+    font-family: 'Titillium Sb', Arial, helvetica, sans-serif; }
   #contact-us .contact-detail .cForm label, #contact-us .contact-detail .cForm input, #contact-us .contact-detail .cForm textarea {
     display: block;
     width: 100%; }
@@ -4094,7 +4093,7 @@ nav ul {
     width: 100%; }
   #contact-us .contact-detail .cForm input[type="submit"] {
     background-color: #256191;
-    font-family: 'Titillium Sb';
+    font-family: 'Titillium Sb', Arial, helvetica, sans-serif;
     color: #FFF;
     margin-top: 20px;
     padding: 5px 15px;
@@ -4231,7 +4230,7 @@ nav ul {
 }
 .single .meta .tags a {
   color: #256191;
-  font-family: 'Titillium Sb'; 
+  font-family: 'Titillium Sb', Arial, helvetica, sans-serif; 
 }
 .single .post-thumbnail {
   margin-bottom: 20px; 
