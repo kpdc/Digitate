@@ -4339,12 +4339,12 @@ nav ul {
     height: 1em;
 }
 
-.site-footer .wpb_image_grid_ul .isotope-item {
+.site-footer .wpb_image_grid .wpb_image_grid_ul .isotope-item {
     margin-right: 15px !important;
 }
 
-.site-footer .wpb_image_grid_ul img {
-    max-width: 50px !important;
+.site-footer .wpb_image_grid .wpb_image_grid_ul img {
+    max-width: 60px !important;
 }
 
 .home .owl-theme .owl-controls {
