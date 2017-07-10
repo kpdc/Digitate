@@ -68,12 +68,13 @@ function digitate_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'digitate' ),
-                'footnav' => esc_html__( 'Footnav', 'digitate' ),
+                'legal' => esc_html__( 'Legal', 'digitate' ),
                 'productfeanav' => esc_html__( 'Productfeanav', 'digitate' ),
                 'newsfilter' => esc_html__( 'Newsfilter', 'digitate' ),
                 'resourcenav' => esc_html__( 'Resourcenav', 'digitate' ),
                 'eventfilter' => esc_html__( 'Eventfilter', 'digitate' ),
                 'footsitemap' => esc_html__( 'Footsitemap', 'digitate' ),
+                'social' => esc_html__( 'Social', 'digitate' ),
 	) );
 
 	/*
