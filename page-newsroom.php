@@ -8,8 +8,10 @@
                 'post_type' => 'newsrooms',
                 'posts_per_page' => 12,
                 'paged' => $paged,
+                'orderby' => 'post_date',
+                'order' => 'DESC',
             ));
-            if($newsroom->have_posts()) : 
+            if($newsroom->have_posts()) :
             ?>
             <header>
                 <h2 class="page-title"><?php the_title(); ?></h2>
@@ -50,7 +52,6 @@
                                 <a href="<?php the_field('media_link'); ?>">Read more</a>
                             </div>
                             <?php endif; ?>
-                            
                         </div>
                     </div>
                 </article>
