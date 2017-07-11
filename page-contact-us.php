@@ -29,11 +29,12 @@
                 
                 <div class="social">
                         <h2 class="page-title">Connect with us</h2>
-                        <ul>
-                            <li><a href="https://twitter.com/iam_ignio"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company-beta/12953270"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCffIEr51qGE8zjgsQ3ZD29Q"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                        </ul>
+                        <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'social',
+                                'container' => '',
+                            ));
+                        ?>
                 </div>
                 
             </div>
