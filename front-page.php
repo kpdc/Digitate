@@ -8,7 +8,7 @@
                         <img src="<?php bloginfo('template_directory')?>/images/home-slide.jpg" alt="" class="wp-post-image">
                         <div class="home-slide-content wrap">
                             <img src="<?php bloginfo('template_directory') ?>/images/ignio.png" alt="ignio" class="ignioBrand">
-                            <p>Cognitive automation <br>system for enterprises</p>
+                            <p>Cognitive automation <br>solution for enterprises</p>
                         </div>
                     </div> <!-- .home-slide-container -->
 
