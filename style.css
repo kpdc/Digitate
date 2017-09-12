@@ -2135,6 +2135,15 @@ nav ul {
       font-size: 1em;
       line-height: 1.17812em; 
     }
+    .home .home-slide .home-slide-container .video-pop {
+        margin-top: 20px;
+    }
+    .home .home-slide .home-slide-container .video-pop a {
+    border: 0;
+    width: 80px; }
+    .home .home-slide .home-slide-container .video-pop a img {
+      -webkit-filter: drop-shadow(0 0 3px black);
+      filter: drop-shadow(0 0 3px black); }
   @media (min-width: 360px) {
     .home .home-slide .home-slide-container .home-slide-content {
       -moz-transform: translate(-50%, -50%);
@@ -4667,7 +4676,7 @@ nav ul {
 }
 
 .download-icon {
-	text-align: center;
+  text-align: center;
   text-decoration: none;
   padding: .75em 1em;
   color: #fff;
@@ -4684,4 +4693,8 @@ nav ul {
   box-shadow: 0 2px 4px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.4);
   border: 1px solid #0086b2;
   cursor: pointer;
+}
+
+.event-link {
+    margin-top: 20px;
 }
