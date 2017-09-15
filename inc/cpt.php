@@ -69,7 +69,7 @@
                 'hierarchical' => false,
                 'supports' => array( 'title', 'editor', 'thumbnail' )
         );
-        register_post_type( 'resources', $args );
+        register_post_type( 'resource', $args );
 
         // CPT: Newsroom
         $labels = array (
@@ -161,7 +161,7 @@
                     'rewrite' => array( 'slug' => 'Resource-group' )
             );
 
-            register_taxonomy( 'resource-tag', array( 'resources' ), $args );
+            register_taxonomy( 'resource-tag', array( 'resource' ), $args );
 
             $labels = array(
                     'name' => 'Newsroom Tags',
