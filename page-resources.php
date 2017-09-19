@@ -4,7 +4,7 @@
             <?php
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
              $resources_group = new WP_Query(array(
-                'post_type' => 'resources',
+                'post_type' => 'resource',
                 'paged' => $paged,
             ));
             if($resources_group->have_posts()) : 

@@ -4,13 +4,6 @@
         <main>
             <div class="slide">
                 <div class="home-slide">
-                    <div class="home-slide-container">
-                        <img src="<?php bloginfo('template_directory')?>/images/home-slide.jpg" alt="" class="wp-post-image">
-                        <div class="home-slide-content wrap">
-                            <img src="<?php bloginfo('template_directory') ?>/images/ignio.png" alt="ignio" class="ignioBrand">
-                            <p>Cognitive automation <br>solution for enterprises</p>
-                        </div>
-                    </div> <!-- .home-slide-container -->
 
                     <?php
                     $slide = new WP_Query(array(
@@ -29,12 +22,33 @@
                             <div class="innerWrap">
                                 <h2><?php the_title(); ?></h2> 
                                 <?php the_excerpt(); ?>
+                                <?php if( get_field('video_link') ) { ?>
+                                    <div class="video-pop">
+                                        <a class="popup-youtube" href="<?php the_field('video_link'); ?>">
+                                            <img src="<?php bloginfo('template_directory') ?>/images/playbtn.png" alt="play">
+                                        </a>
+                                    </div>
+                                <?php } elseif(get_field('event_find_out_more')) { ?>
+                                    <div class="event-link">
+                                        <a href="<?php the_field('event_find_out_more'); ?>" target="_blank">
+                                            Find Out More
+                                        </a>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div> <!-- .home-slide-container -->
                     <?php
                     endwhile; endif; wp_reset_postdata();
                     ?>
+                    
+                    <div class="home-slide-container">
+                        <img src="<?php bloginfo('template_directory')?>/images/home-slide.jpg" alt="" class="wp-post-image">
+                        <div class="home-slide-content wrap">
+                            <img src="<?php bloginfo('template_directory') ?>/images/ignio.png" alt="ignio" class="ignioBrand">
+                            <p>Cognitive automation <br>solution for enterprises</p>
+                        </div>
+                    </div> <!-- .home-slide-container -->
                 </div> <!-- .home-slide -->
         </div> <!-- .slide -->
             <section class="quick-link">
