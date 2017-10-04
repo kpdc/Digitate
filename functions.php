@@ -135,6 +135,14 @@ add_action( 'after_setup_theme', 'digitate_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function digitate_scripts() {
+    
+        if (!is_admin()) add_action("wp_enqueue_scripts", "digitate_custom_jquery_enqueue", 11);
+            function digitate_custom_jquery_enqueue() {
+               wp_deregister_script('jquery');
+               wp_register_script('jquery', "//code.jquery.com/jquery-latest.min.js", false, null);
+               wp_enqueue_script('jquery');
+        }
+
         wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '4.5.0', false );
         
 	wp_enqueue_script( 'digitate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
