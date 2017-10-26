@@ -1,5 +1,4 @@
 <?php
-	ob_start('fix_links');
 /**
  * The header for our theme
  *
