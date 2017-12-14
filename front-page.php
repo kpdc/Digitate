@@ -49,6 +49,17 @@
                             <p>Cognitive automation <br>solution for enterprises</p>
                         </div>
                     </div> <!-- .home-slide-container -->
+                    <div class="home-slide-container">
+                        <img src="https://www.digitate.com/wp-content/uploads/2017/12/Space-Frontier_2800.jpg" alt="" class="wp-post-image">
+                        <div class="home-slide-content wrap">
+                            <p>Could AI be the Force that IT has been seeking all these years to better run their infrastructure?</p>
+                            <div class="event-link">
+                                <a href="https://www.digitate.com/star-wars-impacts/" target="_blank">
+                                    Find Out More
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!-- .home-slide-container -->
                 </div> <!-- .home-slide -->
         </div> <!-- .slide -->
             <section class="quick-link">
